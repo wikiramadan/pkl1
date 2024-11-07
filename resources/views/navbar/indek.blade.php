@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <!-- Bootstrap -->
-    <link rel="icon" type="gambar/logo.png" href="gambar/logo.png">
+    <link rel="icon" type="../gambar/logo.png" href="../gambar/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/stylenav.css">
@@ -17,7 +17,7 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
     <a class="navbar-brand" href="#">
-                <img src="gambar/logo.png" alt="#" style="width: 40px; height: auto;">
+                <img src="../gambar/logo.png" alt="#" style="width: 40px; height: auto;">
             </a>
         <a class="navbar-brand" href="pages/rpl.php">PPLG</a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,9 +47,9 @@
     <header class="text-center">
         <div class="container">
             <div class="container col-sm-4 col-lg-8 col-md-6">
-                <img src="gambar/logo.png" class="container side-img left-img" alt="Gambar Kiri">
-                <img src="gambar/cs.jpeg" alt="Gambar" class="header-img">
-                <img src="gambar/images.jpg" class="container side-img right-img" alt="Gambar Kanan">
+                <img src="../gambar/logo.png" class="container side-img left-img" alt="../gambar Kiri">
+                <img src="../gambar/cs.jpeg" alt="../gambar" class="header-img">
+                <img src="../gambar/images.jpg" class="container side-img right-img" alt="../gambar Kanan">
             </div>
             <div class="container col-sm-12 col-lg-4 col-md-6" style="margin-top: 50px;">
                 <h3 class="fst-italic">Selamat datang! Ayo berkolaborasi dan </h3>
@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="profile-container">
-                    <img src="gambar/wiki.jpeg" class="profile-img" alt="Foto Profil 1" />
+                    <img src="../gambar/wiki.jpeg" class="profile-img" alt="Foto Profil 1" />
                     <h2>Wiki Ramadan</h2>
                     <p>
                         <strong class="fst-italic">Posisi:</strong> Programmer <br>
@@ -77,7 +77,7 @@
 
             <div class="col-md-6 mb-4">
                 <div class="profile-container">
-                    <img src="gambar/iip.jpeg" class="profile-img" alt="Foto Profil 2" />
+                    <img src="../gambar/iip.jpeg" class="profile-img" alt="Foto Profil 2" />
                     <h2>Afifi Abdul Hadi</h2>
                     <p>
                         <strong class="fst-italic">Posisi:</strong> UI/UX Designer <br>
@@ -97,8 +97,8 @@
             <!-- Berita 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="gambar/banjir.jpg" class="card-img-top rounded mx-auto d-block"
-                        alt="Gambar Banjir">
+                    <img src="../gambar/banjir.jpg" class="card-img-top rounded mx-auto d-block"
+                        alt="../gambar Banjir">
                     <div class="card-body">
                         <h5 class="news-title">Banjir Melanda Pangkalpinang</h5>
                         <p class="news-body" style="width: 350px;">Hujan deras selama tiga hari berturut-turut
@@ -111,8 +111,8 @@
                 <!-- Berita 2 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="gambar/dpr.jpeg" class="card-img-top rounded mx-auto d-block"
-                            alt="Gambar DPR">
+                        <img src="../gambar/dpr.jpeg" class="card-img-top rounded mx-auto d-block"
+                            alt="../gambar DPR">
                         <div class="card-body">
                             <h5 class="news-title">Anggota DPR Tertangkap Korupsi</h5>
                             <p class="news-body" style="width: 300px;">Seorang anggota DPR ditangkap oleh KPK atas
@@ -126,8 +126,8 @@
                 <!-- Berita 3 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="gambar/kec.jpeg" class="card-img-top rounded mx-auto d-block "
-                            alt="Gambar Kecelakaan">
+                        <img src="../gambar/kec.jpeg" class="card-img-top rounded mx-auto d-block "
+                            alt="../gambar Kecelakaan">
                         <div class="card-body">
                             <h5 class="news-title">Kecelakaan di Jalan Tol</h5>
                             <p class="news-body" style="width: 310px;">Sebuah kecelakaan melibatkan mobil pribadi di
@@ -143,8 +143,8 @@
                     <!-- Berita 4 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="gambar/prabowo.jpg" class="card-img-top rounded mx-auto d-block"
-                                alt="Gambar Prabowo">
+                            <img src="../gambar/prabowo.jpg" class="card-img-top rounded mx-auto d-block"
+                                alt="../gambar Prabowo">
                             <div class="card-body">
                                 <h5 class="news-title">Prabowo dalam Perjalanan Politik</h5>
                                 <p class="news-body" style="width: 300px;">Prabowo Subianto kembali mencalonkan diri
@@ -159,7 +159,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="gambar/kebakaranhutan.jpg" class="card-img-top rounded mx-auto d-block"
-                                alt="Gambar Kebakaran Hutan">
+                                alt="../gambar Kebakaran Hutan">
                             <div class="card-body">
                                 <h5 class="news-title">Kebakaran Hutan Meluas</h5>
                                 <p class="news-body" style="width: 300px;">Kebakaran hutan yang terjadi di wilayah
@@ -173,8 +173,8 @@
                     <!-- Berita 6 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="gambar/tauran.jpg" class="card-img-top rounded mx-auto d-block"
-                                alt="Gambar Tauran">
+                            <img src="../gambar/tauran.jpg" class="card-img-top rounded mx-auto d-block"
+                                alt="../gambar Tauran">
                             <div class="card-body">
                                 <h5 class="news-title">Tauran di Jakarta</h5>
                                 <p class="news-body" style="width: 300px;">Sejumlah remaja tertangkap usai terlibat
