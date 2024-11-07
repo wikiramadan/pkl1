@@ -1,0 +1,12 @@
+/* Kelas tombol custom */
+.btn-custom {
+    background-color: #949494; /* Warna latar belakang yang diinginkan */
+    color: #333; /* Warna teks */
+    border: 1px solid #ccc; /* Warna border */
+}
+
+/* Hover effect */
+.btn-custom:hover {
+    background-color: #ccc; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
