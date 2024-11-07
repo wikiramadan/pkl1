@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavbarController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,4 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/navbar', [NavbarController::class, 'index']);
+Route::get('/navbar', [NavbarController::class, 'index']);Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'login'])->name('login.proses')->middleware('guest');
