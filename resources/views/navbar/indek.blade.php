@@ -14,35 +14,36 @@
 </head>
 
 <body>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-    <a class="navbar-brand" href="#">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
                 <img src="../gambar/logo.png" alt="#" style="width: 40px; height: auto;">
             </a>
-        <a class="navbar-brand" href="pages/rpl.php">PPLG</a> 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                    <a class="nav-link" style="color: black" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/berita.php">Berita</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/kontak.php">Kontak</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
+            <a class="navbar-brand" href="pages/rpl.php">PPLG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/berita.php">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/kontak.php">Kontak</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="pages/login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
                     </li>
                 </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="text-center">
         <div class="container">
@@ -73,7 +74,7 @@
                     </p>
                     <a class="nav-link " href="{{ url('/detail-wiki') }}">Detail</a>
 
-                    </div>
+                </div>
             </div>
 
             <div class="col-md-6 mb-4">
@@ -98,8 +99,7 @@
             <!-- Berita 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="../gambar/banjir.jpg" class="card-img-top rounded mx-auto d-block"
-                        alt="../gambar Banjir">
+                    <img src="../gambar/banjir.jpg" class="card-img-top rounded mx-auto d-block" alt="../gambar Banjir">
                     <div class="card-body">
                         <h5 class="news-title">Banjir Melanda Pangkalpinang</h5>
                         <p class="news-body" style="width: 350px;">Hujan deras selama tiga hari berturut-turut
@@ -109,106 +109,105 @@
                 </div>
             </div>
 
-                <!-- Berita 2 -->
+            <!-- Berita 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../gambar/dpr.jpeg" class="card-img-top rounded mx-auto d-block" alt="../gambar DPR">
+                    <div class="card-body">
+                        <h5 class="news-title">Anggota DPR Tertangkap Korupsi</h5>
+                        <p class="news-body" style="width: 300px;">Seorang anggota DPR ditangkap oleh KPK atas
+                            dugaan
+                            kasus korupsi proyek infrastruktur...</p>
+                        <a href="pages/detailberita2.php" class="btn btn-outline-secondary">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berita 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../gambar/kec.jpeg" class="card-img-top rounded mx-auto d-block "
+                        alt="../gambar Kecelakaan">
+                    <div class="card-body">
+                        <h5 class="news-title">Kecelakaan di Jalan Tol</h5>
+                        <p class="news-body" style="width: 310px;">Sebuah kecelakaan melibatkan mobil pribadi di
+                            jalan
+                            tol menyebabkan arus lalu lintas tersendat...</p>
+                        <a href="pages/detailberita3.php" class="btn btn-outline-secondary">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Berita 4 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="../gambar/dpr.jpeg" class="card-img-top rounded mx-auto d-block"
-                            alt="../gambar DPR">
+                        <img src="../gambar/prabowo.jpg" class="card-img-top rounded mx-auto d-block"
+                            alt="../gambar Prabowo">
                         <div class="card-body">
-                            <h5 class="news-title">Anggota DPR Tertangkap Korupsi</h5>
-                            <p class="news-body" style="width: 300px;">Seorang anggota DPR ditangkap oleh KPK atas
-                                dugaan
-                                kasus korupsi proyek infrastruktur...</p>
-                            <a href="pages/detailberita2.php" class="btn btn-outline-secondary">Detail</a>
+                            <h5 class="news-title">Prabowo dalam Perjalanan Politik</h5>
+                            <p class="news-body" style="width: 300px;">Prabowo Subianto kembali mencalonkan diri
+                                sebagai
+                                presiden dengan dukungan dari berbagai partai...</p>
+                            <a href="pages/detailberita4.php" class="btn btn-outline-secondary">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Berita 3 -->
+                <!-- Berita 5 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="../gambar/kec.jpeg" class="card-img-top rounded mx-auto d-block "
-                            alt="../gambar Kecelakaan">
+                        <img src="gambar/kebakaranhutan.jpg" class="card-img-top rounded mx-auto d-block"
+                            alt="../gambar Kebakaran Hutan">
                         <div class="card-body">
-                            <h5 class="news-title">Kecelakaan di Jalan Tol</h5>
-                            <p class="news-body" style="width: 310px;">Sebuah kecelakaan melibatkan mobil pribadi di
-                                jalan
-                                tol menyebabkan arus lalu lintas tersendat...</p>
-                            <a href="pages/detailberita3.php" class="btn btn-outline-secondary">Detail</a>
+                            <h5 class="news-title">Kebakaran Hutan Meluas</h5>
+                            <p class="news-body" style="width: 300px;">Kebakaran hutan yang terjadi di wilayah
+                                Sumatera
+                                semakin meluas dan mengakibatkan kerusakan lingkungan...</p>
+                            <a href="pages/detailberita5.php" class="btn btn-outline-secondary">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-
-                    <!-- Berita 4 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="../gambar/prabowo.jpg" class="card-img-top rounded mx-auto d-block"
-                                alt="../gambar Prabowo">
-                            <div class="card-body">
-                                <h5 class="news-title">Prabowo dalam Perjalanan Politik</h5>
-                                <p class="news-body" style="width: 300px;">Prabowo Subianto kembali mencalonkan diri
-                                    sebagai
-                                    presiden dengan dukungan dari berbagai partai...</p>
-                                <a href="pages/detailberita4.php" class="btn btn-outline-secondary">Detail</a>
-                            </div>
+                <!-- Berita 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../gambar/tauran.jpg" class="card-img-top rounded mx-auto d-block"
+                            alt="../gambar Tauran">
+                        <div class="card-body">
+                            <h5 class="news-title">Tauran di Jakarta</h5>
+                            <p class="news-body" style="width: 300px;">Sejumlah remaja tertangkap usai terlibat
+                                dalam aksi
+                                tawuran dngan kelopok lain di pusat kota Jakarta...</p>
+                            <a href="pages/detailberita6.php" class="btn btn-outline-secondary">Detail</a>
                         </div>
                     </div>
-
-                    <!-- Berita 5 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="gambar/kebakaranhutan.jpg" class="card-img-top rounded mx-auto d-block"
-                                alt="../gambar Kebakaran Hutan">
-                            <div class="card-body">
-                                <h5 class="news-title">Kebakaran Hutan Meluas</h5>
-                                <p class="news-body" style="width: 300px;">Kebakaran hutan yang terjadi di wilayah
-                                    Sumatera
-                                    semakin meluas dan mengakibatkan kerusakan lingkungan...</p>
-                                <a href="pages/detailberita5.php" class="btn btn-outline-secondary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Berita 6 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="../gambar/tauran.jpg" class="card-img-top rounded mx-auto d-block"
-                                alt="../gambar Tauran">
-                            <div class="card-body">
-                                <h5 class="news-title">Tauran di Jakarta</h5>
-                                <p class="news-body" style="width: 300px;">Sejumlah remaja tertangkap usai terlibat
-                                    dalam aksi
-                                    tawuran dngan kelopok lain di pusat kota Jakarta...</p>
-                                <a href="pages/detailberita6.php" class="btn btn-outline-secondary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+            </div>
 
         </div>
-        <a href="pages/tambahberita.php" class="btn btn-outline-secondary">TambahBerita</a>
+        <a href="{{ route('berita.create') }}" class="btn btn-secondary mb-3">Tambah Berita</a>
     </div>
 
- 
+
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        window.onscroll = function () {
-            const navbar = document.getElementById('navbar');
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        };
+    window.onscroll = function() {
+        const navbar = document.getElementById('navbar');
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
     </script>
-     <footer >
-    <p class="mb-0 text-center"> @ pasaman 17 Oktober 2024</p>
-</footer>
-   
+    <footer>
+        <p class="mb-0 text-center"> @ pasaman 17 Oktober 2024</p>
+    </footer>
+
 
 </body>
 

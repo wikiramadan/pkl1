@@ -53,26 +53,4 @@ class BeritaController extends Controller
         return view('berita.create');
     }
 
-    public function store(Request $request)
-    {
-        // Validasi input
-        $request->validate([
-            'judul_berita' => 'required|max:255',
-            'gambar_berita' => 'required',
-            'tanggal_berita' => 'required',
-            'deskripsi_berita' => 'required',
-        ]);
-
-        // Simpan data berita di sesi
-        $berita = [
-            'judul_berita' => $request->judul_berita,
-            'gambar_berita' => $request->gamabar_berita,
-            'tanggal_berita' => $request->tanggal_berita,
-            'deskripsi_berita' => $request->deskripsi_berita,
-        ];
-
-        return redirect()->route('berita.index')->with('success', 'Berita berhasil ditambahkan');
-    }
-
-
 }
