@@ -1,21 +1,34 @@
+/* Pastikan body dan html memiliki margin 0 dan padding 0 */
+html,
 body {
-    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
 }
+
+/* Tambahkan sedikit jarak di luar container */
 .container {
-    max-width: 40px; 
-    margin-top: 30px; 
+    margin-top: 20px; /* Atur agar konten tidak terhalang navbar */
 }
-.header {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px; 
-}
+
+/* Perbaikan untuk card agar lebih responsif */
 .card {
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.btn-custom {
-    display: block;
-    margin: 20px auto; 
-    width: 20px; 
+
+/* Agar gambar di dalam card tetap proporsional */
+.card img {
+    object-fit: cover;
+    max-height: 100%;
+}
+
+/* Agar konten di dalam card rapi */
+.card-body {
+    padding: 15px;
+}
+
+/* Setiap paragraf dalam card harus memiliki margin yang sedikit agar lebih rapi */
+.card-text {
+    margin-bottom: 10px;
 }
