@@ -71,8 +71,9 @@
                         <strong class="fst-italic">Lokasi:</strong> Padang, Sumatra Barat <br>
                         <strong class="fst-italic">Email:</strong> wikiramadan8@gmail.com
                     </p>
-                    <a href="pages/detailkami1.php" class="btn btn-outline-secondary">Detail</a>
-                </div>
+                    <a class="nav-link " href="{{ url('/detail-wiki') }}">Detail</a>
+
+                    </div>
             </div>
 
             <div class="col-md-6 mb-4">
@@ -84,7 +85,7 @@
                         <strong class="fst-italic">Lokasi:</strong> Bandung, Sumatra Barat <br>
                         <strong class="fst-italic">Email:</strong> Afifihadi7@gmail.com
                     </p>
-                    <a href="pages/detailkami22.php" class="btn btn-outline-secondary">Detail</a>
+                    <a class="nav-link" href="{{ url('/detail-afifi') }}">Detail</a>
                 </div>
             </div>
         </div>
@@ -204,7 +205,9 @@
             }
         };
     </script>
-    
+     <footer >
+    <p class="mb-0 text-center"> @ pasaman 17 Oktober 2024</p>
+</footer>
    
 
 </body>

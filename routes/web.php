@@ -4,9 +4,14 @@ use App\Http\Controllers\BeritaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\LoginController;
+<<<<<<< HEAD
 
 
 
+=======
+use App\Http\Controllers\ReqisterController;
+use App\Http\Controllers\DetailkamiController;
+>>>>>>> de61ebec189247297495b4dd7c4d508187ba8b71
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +31,7 @@ Route::get('/berita/{id}', function($id) {
     return view('berita.show');
 });
 
+<<<<<<< HEAD
 
 Route::get('/navbar', [NavbarController::class, 'index']);
 Route::get('/berita', [BeritaController::class, 'index']);
@@ -41,3 +47,11 @@ Route::get('/berita.create', [BeritaController::class, 'create'])->name('berita.
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'login'])->name('login.proses')->middleware('guest');
+=======
+Route::get('/navbar', [NavbarController::class, 'index']);Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'login'])->name('login.proses')->middleware('guest');
+Route::post('/reqister', [ReqisterController::class, 'reqister'])->name('reqister.proses')->middleware('guest');
+
+Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
+Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
+>>>>>>> de61ebec189247297495b4dd7c4d508187ba8b71
