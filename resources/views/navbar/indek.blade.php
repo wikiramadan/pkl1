@@ -189,7 +189,7 @@
             </div>
 
         </div>
-        <a href="{{ route('berita.create') }}" class="btn btn-secondary mb-3">Tambah Berita</a>
+        <a href="{{ route('berita/create') }}" class="btn btn-secondary mb-3">Tambah Berita</a>
     </div>
 
 
