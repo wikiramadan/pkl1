@@ -6,6 +6,7 @@ use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReqisterController;
 use App\Http\Controllers\DetailkamiController;
+use App\Http\Controllers\ContakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::get('/berita/{id}', function($id) {
 
 
 Route::get('/navbar', [NavbarController::class, 'index']);
+Route::get('/contak', [ContakController::class, 'contak']);
 Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita.show', [BeritaController::class, 'show']);
 Route::get('/berita.detail2', [BeritaController::class, 'detail2']);

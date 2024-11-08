@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="index.php">Home</a>
+                        <a class="nav-link" style="color: black" href="navbar">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="berita">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/kontak.php">Kontak</a>
+                        <a class="nav-link" href="contak">Kontak</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -72,7 +72,8 @@
                         <strong class="fst-italic">Lokasi:</strong> Padang, Sumatra Barat <br>
                         <strong class="fst-italic">Email:</strong> wikiramadan8@gmail.com
                     </p>
-                    <a class="nav-link " href="{{ url('/detail-wiki') }}">Detail</a>
+                    <a href="{{url('/detail-wiki') }}" class="btn btn-outline-secondary">Detail</a>
+
 
                 </div>
             </div>
@@ -86,7 +87,7 @@
                         <strong class="fst-italic">Lokasi:</strong> Bandung, Sumatra Barat <br>
                         <strong class="fst-italic">Email:</strong> Afifihadi7@gmail.com
                     </p>
-                    <a class="nav-link" href="{{ url('/detail-afifi') }}">Detail</a>
+                    <a href="{{url('/detail-afifi') }}" class="btn btn-outline-secondary">Detail</a>
                 </div>
             </div>
         </div>

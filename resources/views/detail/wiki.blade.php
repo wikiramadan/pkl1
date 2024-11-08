@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-3">
     <div class="container">
     <a class="navbar-brand" href="#">
                 <img src="../gambar/logo.png" alt="#" style="width: 40px; height: auto;">
@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Home</a>
+                    <a class="nav-link" href="navbar">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="berita.php">Berita</a>
+                    <a class="nav-link" href="berita">Berita</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="kontak.php">Kontak</a>
+                <a class="nav-link" href="kontak">Kontak</a>
                 </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a class="nav-link" href="login"><i class="fas fa-sign-in-alt"></i> Login</a>
                     </li>
                 </ul>
         </div>
@@ -41,8 +41,8 @@
 
 
 <div class="container mt-5">
-<a href="../index.php" class="btn btn-outline-secondary" style="margin-top: 50px;"><-</a>
-    <div class="card mb-3" style="margin-top: 10px;">
+<button type="button" class="btn btn-outline-secondary mb-3" onclick="window.history.back();">&larr; Back</button>
+<div class="card mb-3" style="margin-top: 10px; ">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="../gambar/wiki.jpeg" class="img-fluid rounded-start" alt="Foto Wiki Ramadan">
