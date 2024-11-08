@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.php">Home</a>
+                        <a class="nav-link" href="navbar">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: black" href="berita.php">Berita</a>
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="kontak.php">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a class="nav-link" href="login"><i class="fas fa-sign-in-alt"></i> Login</a>
                     </li>
                 </ul>
             </div>
