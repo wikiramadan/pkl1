@@ -22,30 +22,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/berita/{id}', function($id) {
-    return view('berita.show');
-});
+
+// perintah untuk membaca url berita /navbar.Controller tempat untuk menangani permintaan pengguna (seperti menampilkan halaman atau memproses formulir).
+Route::get('/navbar', [NavbarController::class, 'index']);
+Route::get('/berita', [BeritaController::class, 'index']);
+Route::get('/berita/show', [BeritaController::class, 'show']);
+Route::get('/berita/detail2', [BeritaController::class, 'detail2']);
+Route::get('/berita/detail3', [BeritaController::class, 'detail3']);
+Route::get('/berita/detail4', [BeritaController::class, 'detail4']);
+Route::get('/berita/detail5', [BeritaController::class, 'detail5']);
+Route::get('/beritad/etail6', [BeritaController::class, 'detail6']);
+Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/create');
+
+
+Route::get('/reqister', [LoginController::class, 'reqister']);
 
 
 Route::get('/navbar', [NavbarController::class, 'index']);
-Route::get('/berita', [BeritaController::class, 'index']);
-Route::get('/berita.show', [BeritaController::class, 'show']);
-Route::get('/berita.detail2', [BeritaController::class, 'detail2']);
-Route::get('/berita.detail3', [BeritaController::class, 'detail3']);
-Route::get('/berita.detail4', [BeritaController::class, 'detail4']);
-Route::get('/berita.detail5', [BeritaController::class, 'detail5']);
-Route::get('/berita.detail6', [BeritaController::class, 'detail6']);
-Route::get('/berita.create', [BeritaController::class, 'create'])->name('berita.create');
-
-
-
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::get('/reqister', [LoginController::class, 'reqister']);
-Route::post('/login', [LoginController::class, 'login'])->name('login.proses')->middleware('guest');
-
-Route::get('/navbar', [NavbarController::class, 'index']);Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'login'])->name('login.proses')->middleware('guest');
-Route::post('/reqister', [ReqisterController::class, 'reqister'])->name('reqister.proses')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/reqister', [ReqisterController::class, 'reqister']);
 
 Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
