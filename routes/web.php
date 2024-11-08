@@ -42,6 +42,7 @@ Route::get('/berita.create', [BeritaController::class, 'create'])->name('berita.
 
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/reqister', [LoginController::class, 'reqister']);
 Route::post('/login', [LoginController::class, 'login'])->name('login.proses')->middleware('guest');
 
 Route::get('/navbar', [NavbarController::class, 'index']);Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
