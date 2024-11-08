@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afifi Abdul Hadi</title>
+    <title>Detail Afifi Abdul Hadi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/styledet.css">
+    <link rel="stylesheet" href="css/styledet.css">
 
 </head>
 <body>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-3">
     <div class="container">
     <a class="navbar-brand" href="#">
                 <img src="../gambar/logo.png" alt="#" style="width: 40px; height: auto;">
@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Home</a>
+                    <a class="nav-link" href="navbar">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="berita.php">Berita</a>
+                    <a class="nav-link" href="berita">Berita</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="kontak.php">Kontak</a>
+                <a class="nav-link" href="kontak">Kontak</a>
                 </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a class="nav-link" href="login"><i class="fas fa-sign-in-alt"></i> Login</a>
                     </li>
                 </ul>
         </div>
@@ -41,18 +41,20 @@
 
 
 <div class="container mt-5">
-<a href="../index.php" class="btn btn-outline-secondary" style="margin-top: 50px;"><-</a>
-    <div class="card mb-3" style="margin-top: 10px;">
+<button type="button" class="btn btn-outline-secondary mb-3" onclick="window.history.back();">&larr; Back</button>
+<div class="card mb-3" style="margin-top: 10px; ">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="../gambar/iip.jpeg" class="img-fluid rounded-start" alt="Foto Wiki Ramadan">
+                <img src="../gambar/iip.jpeg" class="img-fluid rounded-start" alt="Foto ">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">Afifi Abdul Hadi</h5>
                     <p class="card-text">
-                        Saya adalah lembaga pendidikan yang berfokus pada pengembangan keterampilan di bidang teknologi informasi. 
-                        Saya menawarkan berbagai program pelatihan dan sertifikasi untuk membantu mencapai tujuan mereka.
+                        Saya adalah Pelajar yang berfokus pada pengembangan keterampilan di bidang teknologi dizaman sekarang. 
+                        Saya menawarkan berbagai program pelatihan dan sertifikasi untuk membantu mencapai tujuan Saat memasuki sekolah menengah, saya mulai belajar pemrograman secara serius. 
+                        Saya mendaftar di kursus pemrograman di sekolah dan mulai mempelajari bahasa pemrograman pertama saya, yaitu Python. Meskipun tampaknya menakutkan pada awalnya, 
+                        saya menemukan bahwa menulis kode itu seperti menyusun puzzle. Saya merasa sangat puas ketika berhasil menyelesaikan tugas pemrograman pertama saya, meskipun hanya program sederhana yang mencetak “Hello, World!”..
                     </p>
                     <p class="card-text">
                         Fasilitas meliputi laboratorium komputer yang modern, ruang kelas yang nyaman, dan akses ke berbagai sumber daya online.

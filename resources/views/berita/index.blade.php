@@ -30,7 +30,7 @@
                         <a class="nav-link" style="color: black" href="berita.php">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kontak.php">Kontak</a>
+                        <a class="nav-link" href="cotak">Kontak</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login"><i class="fas fa-sign-in-alt"></i> Login</a>

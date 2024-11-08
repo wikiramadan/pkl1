@@ -1,0 +1,16 @@
+/* Agar formulir berada di tengah layar */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.contact-form-container {
+    width: 400%;
+    max-width: 800px; /* Atur lebar maksimum */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}

@@ -32,7 +32,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav">
-                    <a class="nav-link" href="reqister.php">Kontak</a>
+                    <a class="nav-link" href="contak">Kontak</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login"><i class="fas fa-sign-in-alt"></i> Login</a>

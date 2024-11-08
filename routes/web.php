@@ -6,6 +6,7 @@ use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReqisterController;
 use App\Http\Controllers\DetailkamiController;
+use App\Http\Controllers\ContakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,12 +36,11 @@ Route::get('/beritad/etail6', [BeritaController::class, 'detail6']);
 Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/create');
 
 
-Route::get('/reqister', [LoginController::class, 'reqister']);
 
-
-Route::get('/navbar', [NavbarController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/reqister', [ReqisterController::class, 'reqister']);
+Route::get('/contak', [ContakController::class, 'contak']);
+
 
 Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);

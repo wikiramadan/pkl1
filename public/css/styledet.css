@@ -2,12 +2,11 @@
 html,
 body {
     margin: 0;
-    padding: 0;
-}
+    padding-top: 30px;
 
 /* Tambahkan sedikit jarak di luar container */
 .container {
-    margin-top: 20px; /* Atur agar konten tidak terhalang navbar */
+    margin-top: 5px; /* Atur agar konten tidak terhalang navbar */
 }
 
 /* Perbaikan untuk card agar lebih responsif */
@@ -25,7 +24,7 @@ body {
 
 /* Agar konten di dalam card rapi */
 .card-body {
-    padding: 15px;
+    padding: 10px;
 }
 
 /* Setiap paragraf dalam card harus memiliki margin yang sedikit agar lebih rapi */
