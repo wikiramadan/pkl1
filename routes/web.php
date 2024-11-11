@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReqisterController;
 use App\Http\Controllers\DetailkamiController;
 use App\Http\Controllers\ContakController;
+use App\Http\Controllers\ContentController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\UserController;
 
@@ -31,13 +32,17 @@ Route::get('/navbar', [NavbarController::class, 'index']);
 // Route::get('/navbar', [SiswaController::class, 'contak']);
 
 Route::get('/berita', [BeritaController::class, 'index']);
-Route::get('/berita.show', [BeritaController::class, 'show']);
-Route::get('/berita.detail2', [BeritaController::class, 'detail2']);
+// Route::get('/berita.show', [BeritaController::class, 'show']);
+// Route::get('/berita.detail2', [BeritaController::class, 'detail2']);
 Route::get('/berita.detail3', [BeritaController::class, 'detail3']);
 Route::get('/berita.detal4', [BeritaController::class, 'detail4']);
 Route::get('/berita.detail5', [BeritaController::class, 'detail5']);
 Route::get('/beritad.etail6', [BeritaController::class, 'detail6']);
-Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/create');
+// Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/create');
+Route::get('/ContentBerita', [ContentController::class,'index']);
+Route::get('/ContentBerita.detail1', [ContentController::class, 'detail1']);
+Route::get('/ContentBerita.detail2', [ContentController::class, 'detail2']);
+Route::get('/ContentBerita/tambahberita', [ContentController::class,'tambahberita'])->name('ContentBerita/tambahberita');
 
 
 
