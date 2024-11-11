@@ -31,7 +31,7 @@
                     <input type="password" class="form-control" placeholder="Re-Password" required>
                 </div>
             </form>
-            <p class="mt-3"><a href="../index.php">REGISTER</a></p>
+            <p class="mt-3"><a href="navbar">REGISTER</a></p>
             <p class="mt-3"><a href="../pages/login.php">Kembali ke Login</a></p>
         </div>
     </div>

@@ -7,6 +7,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReqisterController;
 use App\Http\Controllers\DetailkamiController;
 use App\Http\Controllers\ContakController;
+use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +25,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
 // perintah untuk membaca url berita /navbar.Controller tempat untuk menangani permintaan pengguna (seperti menampilkan halaman atau memproses formulir).
 Route::get('/navbar', [NavbarController::class, 'index']);
+// Route::get('/navbar', [SiswaController::class, 'contak']);
+
 Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita.show', [BeritaController::class, 'show']);
 Route::get('/berita.detail2', [BeritaController::class, 'detail2']);
@@ -38,7 +42,7 @@ Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/
 
 
 Route::get('/login', [LoginController::class, 'index']);
-Route::get('/reqister', [ReqisterController::class, 'reqister']);
+Route::get('/reqister', [ReqisterController::class, 'index']);
 Route::get('/contak', [ContakController::class, 'index']);
 
 

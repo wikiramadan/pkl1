@@ -105,7 +105,7 @@
                         <h5 class="news-title">Banjir Melanda Pangkalpinang</h5>
                         <p class="news-body" style="width: 350px;">Hujan deras selama tiga hari berturut-turut
                             menyebabkan banjir besar di daerah Pangkalpinang...</p>
-                        <a href="{{url('berita/show') }}" class="btn btn-outline-secondary">Detail</a>
+                        <a href="{{url('berita.show') }}" class="btn btn-outline-secondary">Detail</a>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                         <p class="news-body" style="width: 300px;">Seorang anggota DPR ditangkap oleh KPK atas
                             dugaan
                             kasus korupsi proyek infrastruktur...</p>
-                        <a href="{{url('berita/detail2') }}" class="btn btn-outline-secondary">Detail</a>
+                        <a href="{{url('berita.detail2') }}" class="btn btn-outline-secondary">Detail</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                         <p class="news-body" style="width: 310px;">Sebuah kecelakaan melibatkan mobil pribadi di
                             jalan
                             tol menyebabkan arus lalu lintas tersendat...</p>
-                        <a href="{{url('berita/detail3') }}" class="btn btn-outline-secondary">Detail</a>
+                        <a href="{{url('berita.detail3') }}" class="btn btn-outline-secondary">Detail</a>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                             <p class="news-body" style="width: 300px;">Prabowo Subianto kembali mencalonkan diri
                                 sebagai
                                 presiden dengan dukungan dari berbagai partai...</p>
-                            <a href="{{url('berita/detail4') }}" class="btn btn-outline-secondary">Detail</a>
+                            <a href="{{url('berita.detail4') }}" class="btn btn-outline-secondary">Detail</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                             <p class="news-body" style="width: 300px;">Kebakaran hutan yang terjadi di wilayah
                                 Sumatera
                                 semakin meluas dan mengakibatkan kerusakan lingkungan...</p>
-                            <a href="{{url('berita/detail5') }}" class="btn btn-outline-secondary">Detail</a>
+                            <a href="{{url('berita.detail5') }}" class="btn btn-outline-secondary">Detail</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                             <p class="news-body" style="width: 300px;">Sejumlah remaja tertangkap usai terlibat
                                 dalam aksi
                                 tawuran dngan kelopok lain di pusat kota Jakarta...</p>
-                            <a href="{{url('berita/detail6') }}" class="btn btn-outline-secondary">Detail</a>
+                            <a href="{{url('berita.detail6') }}" class="btn btn-outline-secondary">Detail</a>
                         </div>
                     </div>
                 </div>

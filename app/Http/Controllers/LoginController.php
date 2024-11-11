@@ -11,8 +11,4 @@ class LoginController extends Controller
     {
         return view("login");
     }
-    public function reqister()
-    {
-        return view("reqister");
-    }
 }
