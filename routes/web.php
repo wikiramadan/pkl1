@@ -31,17 +31,21 @@ Route::get('/', function () {
 Route::get('/navbar', [NavbarController::class, 'index']);
 // Route::get('/navbar', [SiswaController::class, 'contak']);
 
-Route::get('/berita', [BeritaController::class, 'index']);
+// Route::get('/berita', [BeritaController::class, 'index']);
 // Route::get('/berita.show', [BeritaController::class, 'show']);
 // Route::get('/berita.detail2', [BeritaController::class, 'detail2']);
-Route::get('/berita.detail3', [BeritaController::class, 'detail3']);
-Route::get('/berita.detal4', [BeritaController::class, 'detail4']);
-Route::get('/berita.detail5', [BeritaController::class, 'detail5']);
-Route::get('/beritad.etail6', [BeritaController::class, 'detail6']);
+// Route::get('/berita.detail3', [BeritaController::class, 'detail3']);
+// Route::get('/berita.detal4', [BeritaController::class, 'detail4']);
+// Route::get('/berita.detail5', [BeritaController::class, 'detail5']);
+// Route::get('/beritad.etail6', [BeritaController::class, 'detail6']);
 // Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/create');
 Route::get('/ContentBerita', [ContentController::class,'index']);
 Route::get('/ContentBerita.detail1', [ContentController::class, 'detail1']);
 Route::get('/ContentBerita.detail2', [ContentController::class, 'detail2']);
+Route::get('/ContentBerita.detail3', [ContentController::class, 'detail3']);
+Route::get('/ContentBerita.detail4', [ContentController::class, 'detail4']);
+Route::get('/ContentBerita.detail5', [ContentController::class, 'detail5']);
+Route::get('/ContentBerita.detail6', [ContentController::class, 'detail6']);
 Route::get('/ContentBerita/tambahberita', [ContentController::class,'tambahberita'])->name('ContentBerita/tambahberita');
 
 
