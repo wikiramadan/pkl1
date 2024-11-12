@@ -43,7 +43,7 @@
                     <h5 class="news-title">Kecelakaan di Jalan Tol</h5>
                     <p class="news-body" style="width: 310px;">Sebuah kecelakaan melibatkan mobil pribadi di jalan
                         tol menyebabkan arus lalu lintas tersendat...</p>
-                    <a href="{{url('berita.detail3') }}" class="btn btn-outline-secondary">Detail</a>
+                    <a href="{{url('ContentBerita.detail3') }}" class="btn btn-outline-secondary">Detail</a>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
                     <h5 class="news-title">Prabowo dalam Perjalanan Politik</h5>
                     <p class="news-body" style="width: 300px;">Prabowo Subianto kembali mencalonkan diri sebagai
                         presiden dengan dukungan dari berbagai partai...</p>
-                    <a href="{{url('berita.detail4') }}" class="btn btn-outline-secondary">Detail</a>
+                    <a href="{{url('ContentBerita.detail4') }}" class="btn btn-outline-secondary">Detail</a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
                     <h5 class="news-title">Kebakaran Hutan Meluas</h5>
                     <p class="news-body" style="width: 300px;">Kebakaran hutan yang terjadi di wilayah Sumatera
                         semakin meluas dan mengakibatkan kerusakan lingkungan...</p>
-                    <a href="{{url('berita.detail5') }}" class="btn btn-outline-secondary">Detail</a>
+                    <a href="{{url('ContentBerita.detail5') }}" class="btn btn-outline-secondary">Detail</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
                     <h5 class="news-title">Tauran di Jakarta</h5>
                     <p class="news-body" style="width: 300px;">Sejumlah remaja tertangkap usai terlibat dalam aksi
                         tawuran dngan kelopok lain di pusat kota Jakarta...</p>
-                    <a href="{{url('berita.detail6') }}" class="btn btn-outline-secondary">Detail</a>
+                    <a href="{{url('ContentBerita.detail6') }}" class="btn btn-outline-secondary">Detail</a>
                 </div>
             </div>
         </div>
