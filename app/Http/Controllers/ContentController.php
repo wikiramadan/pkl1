@@ -14,9 +14,9 @@ class ContentController extends Controller
 
     public function tambahberita()
     {
-        return view("ContentBerita.create");
+        return view("tambahberita");
     }
-    
+
     public function detail2()
     {
         return view("Contentberita.detail2");
@@ -27,6 +27,6 @@ class ContentController extends Controller
         return view("Contentberita.detail1");
     }
 
-    
+
 
 }

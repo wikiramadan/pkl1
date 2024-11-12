@@ -9,8 +9,8 @@ class NavbarController extends Controller
 {
     public function index()
     {
-        
-        return view('navbar.indek'); 
+
+        return view('navbar.home');
     }
 }
 

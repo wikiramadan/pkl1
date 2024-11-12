@@ -42,7 +42,8 @@ Route::get('/beritad.etail6', [BeritaController::class, 'detail6']);
 Route::get('/ContentBerita', [ContentController::class,'index']);
 Route::get('/ContentBerita.detail1', [ContentController::class, 'detail1']);
 Route::get('/ContentBerita.detail2', [ContentController::class, 'detail2']);
-Route::get('/ContentBerita/tambahberita', [ContentController::class,'tambahberita'])->name('ContentBerita/tambahberita');
+// Route::get('/tambahberita', [ContentController::class,'tambahberita'])->name('/tambahberita');
+Route::get('/tambahberita', [contentController::class, 'create'])->name('tambahberita');
 
 
 
