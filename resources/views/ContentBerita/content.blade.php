@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container md-5" style="margin-top: 50px;">
-    <a href="{{ route('/tambahberita') }}" class="btn btn-secondary mb-3">Tambah Berita</a>
+    <a href="{{ route('ContentBerita/tambahberita') }}" class="btn btn-secondary mb-3">Tambah Berita</a>
     <div class="row">
 
         <!-- Berita 1 -->
