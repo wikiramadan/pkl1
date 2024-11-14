@@ -1,4 +1,4 @@
-{{-- navbar --}}
+
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
@@ -12,10 +12,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="navbar">Home</a>
+                    <a class="nav-link" style="color: black" href="navbar">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: black" href="ContentBerita">Berita</a>
+                    <a class="nav-link" href="ContentBerita">Berita</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contak">Kontak</a>

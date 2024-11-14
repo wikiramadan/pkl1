@@ -10,6 +10,7 @@ use App\Http\Controllers\ContakController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Berita2Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,11 @@ Route::get('/ContentBerita.detail4', [ContentController::class, 'detail4']);
 Route::get('/ContentBerita.detail5', [ContentController::class, 'detail5']);
 Route::get('/ContentBerita.detail6', [ContentController::class, 'detail6']);
 Route::get('/ContentBerita/tambahberita', [ContentController::class,'tambahberita'])->name('ContentBerita/tambahberita');
+
+Route::get('/berita2', [Berita2Controller::class, 'index'])->name('berita2.index');
+Route::get('/berita2', [Berita2Controller::class, 'create']);
+Route::get('/berita2', [Berita2Controller::class, 'store']);
+
 
 
 
