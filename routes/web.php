@@ -65,3 +65,5 @@ Route::get('/contak', [ContakController::class, 'index']);
 
 Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
+Route::get('/user', [UserController::class, 'index']);
+Route::get('/user2.index', [UserController::class, 'user']);
