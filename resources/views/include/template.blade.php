@@ -50,10 +50,10 @@
           <a href="user2.index" class="nav-link">User</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="fotooo" class="nav-link"></a>
+          <a href="berita" class="nav-link">beritabaru</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="gambar" class="nav-link"></a>
+          <a href="setting" class="nav-link">Setting</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
   <a href="{{url('/logout')}}" class="nav-link"></a>

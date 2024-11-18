@@ -11,6 +11,7 @@ use App\Http\Controllers\ContentController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Berita2Controller;
+use App\Http\Controllers\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,6 @@ use App\Http\Controllers\Berita2Controller;
 */
 
 Route::get('/', function () {
-    return view('template3');
     return view('include.template');
 });
 
@@ -52,7 +52,12 @@ Route::get('/ContentBerita.detail5', [ContentController::class, 'detail5']);
 Route::get('/ContentBerita.detail6', [ContentController::class, 'detail6']);
 Route::get('/ContentBerita/tambahberita', [ContentController::class,'tambahberita'])->name('ContentBerita/tambahberita');
 
-Route::get('/berita2', [Berita2Controller::class, 'index']);
+Route::get('/berita', [BeritaController::class, 'data']);
+Route::get('/berita2.index', [UserController::class, 'berita']);
+Route::get('/setting', [SettingController::class, 'index']);
+Route::get('/setting2.index', [UserController::class, 'setting']);
+
+
 
 
 
@@ -66,3 +71,7 @@ Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
 Route::get('/user', [UserController::class, 'index']);
 Route::get('/user2.index', [UserController::class, 'user']);
+Route::get('/berita', [BeritaController::class, 'data']);
+Route::get('/berita2.index', [UserController::class, 'berita']);
+Route::get('/setting', [SettingController::class, 'index']); // Rute untuk Setting Index
+Route::get('/setting2', [SettingController::class, 'setting']);
