@@ -24,7 +24,6 @@ use App\Http\Controllers\Berita2Controller;
 */
 
 Route::get('/', function () {
-    return view('template3');
     return view('include.template');
 });
 
