@@ -1,4 +1,4 @@
-@extends('berita1.index2')
+@extends('berita.index2')
 
 @section('content')
     <div class="container">
@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($berita2s as $berita2)
+                @foreach ($beritas as $berita2)
                     <tr>
                         <td>{{ $berita2->id }}</td>
                         <td>{{ $berita2->judulberita }}</td>
