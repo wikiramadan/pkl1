@@ -1,8 +1,8 @@
 @extends('user.index')
 
 @section('content')
-        <h2 class="mb-4">User Table</h2>
-        <table class="table table-bordered table-striped">
+<h1 class="user-table-title">User Table</h1>
+        <table class="table table-bordered table-striped" style="margin-top: 20px">
             <thead class="table-">
                 <tr>
                     <th>ID</th>
@@ -20,7 +20,7 @@
                 <td>{{ $user->password}}</td>
                 <td>{{ $user->alamat}}</td>
                 <td>
-                    <a href="{{url('/user/update/'. $user->id)}}">ubah</a>
+                   
                 </td>
             </tr>
                 
