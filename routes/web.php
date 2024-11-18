@@ -24,7 +24,7 @@ use App\Http\Controllers\Berita2Controller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template3');
 });
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
@@ -51,9 +51,7 @@ Route::get('/ContentBerita.detail5', [ContentController::class, 'detail5']);
 Route::get('/ContentBerita.detail6', [ContentController::class, 'detail6']);
 Route::get('/ContentBerita/tambahberita', [ContentController::class,'tambahberita'])->name('ContentBerita/tambahberita');
 
-Route::get('/berita2', [Berita2Controller::class, 'index'])->name('berita2.index');
-Route::get('/berita2', [Berita2Controller::class, 'create']);
-Route::get('/berita2', [Berita2Controller::class, 'store']);
+Route::get('/berita2', [Berita2Controller::class, 'index']);
 
 
 
