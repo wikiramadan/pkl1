@@ -16,10 +16,26 @@ class UserController extends Controller
 
     public function user()
     {
-        $data = array(
-            'users' => User::all()
-        );
+        // $data = array(
+        //     'users' => User::all()
+        // );
+
+        // queri get all
+        $data= User::all();
         
-        return view('user2.index',$data);
+        // query menggunakan where
+        // $data = User::where('name','susi')->get();
+
+        
+
+        
+        // quey mendapatkan data pertama
+        //  $data= User::all()->first();
+        //       echo $data->name;
+            
+
+        
+        // dd($data);
+        return view('user2.index',['users' => $data]);
     }
 }

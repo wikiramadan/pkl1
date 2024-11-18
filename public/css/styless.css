@@ -10,3 +10,8 @@
     background-color: #ccc; /* Warna latar belakang saat hover */
     color: white; /* Warna teks saat hover */
 }
+
+
+.user-table-title {
+    margin-top: 100px; /* Atur nilai margin-top sesuai kebutuhan */
+}

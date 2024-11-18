@@ -24,7 +24,7 @@ use App\Http\Controllers\Berita2Controller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('include.template');
 });
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
