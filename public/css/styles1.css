@@ -1,0 +1,8 @@
+.nav-sidebar .nav-link.active-custom {
+    background-color: #ffffff !important;
+    color: #32ab7d !important;
+}
+
+.nav-sidebar .nav-link.active-custom i {
+    color: #87ff5b !important;
+}
