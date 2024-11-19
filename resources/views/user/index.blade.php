@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/styless.css">
 </head>
 <body>
-    @include('include.template')
+    @include('template')
 
  <div class="container mt-5">
-    @yield('content')
+    {{-- @yield('content') --}}
  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
