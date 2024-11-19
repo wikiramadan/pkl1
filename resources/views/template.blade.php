@@ -15,6 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{asset('AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('AdminLTE-3.2.0/dist/css/adminlte.min.css')}}">
+  {{-- <link rel="stylesheet" href="asset/css/styles1.css"> --}}
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -268,6 +269,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Event ketika link sidebar diklik
+        $('.nav-sidebar .nav-link').on('click', function () {
+            // Hapus kelas active-custom dari semua link
+            $('.nav-sidebar .nav-link').removeClass('active-custom');
+            // Tambahkan kelas active-custom pada link yang diklik
+            $(this).addClass('active-custom');
+        });
+    });
+</script>
 
 <!-- jQuery -->
 <script src="{{asset('AdminLTE-3.2.0/plugins/jquery/jquery.min.js')}}"></script>
