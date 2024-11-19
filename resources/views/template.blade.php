@@ -187,12 +187,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Halaman User</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="#" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inactive Page</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a href="berita" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
