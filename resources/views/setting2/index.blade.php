@@ -1,8 +1,9 @@
 @extends('setting.index')
 
 @section('content')
-<h1 class="setting-table-title">Settings Table</h1>
-<table class="table table-bordered table-striped" style="margin-top: 20px">
+<div class="container" style="margin-top: 20px;">
+    <h1 class="text-center">Setting</h1>
+    <table class="table table-bordered table-striped text-center" style="margin: auto; width: 80%;">
     <thead class="table-dark">
         <tr>
             <th>ID</th>

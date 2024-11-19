@@ -57,8 +57,8 @@ class BeritaController extends Controller
 
     public function data()
     {
-        $beritas = Berita::all(); // Ambil semua data dari database
-        return view('berita2.index', ['beritas' => $beritas]); // Kirim data ke view
+        $beritas = Berita::all();
+        return view('berita2.index', ['beritas' => $beritas]); 
     }
 
 

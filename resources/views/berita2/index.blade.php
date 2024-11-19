@@ -1,10 +1,9 @@
 @extends('berita.index2')
 
 @section('content')
-    <div class="container">
-        <h1>Daftar berita2</h1>
-
-        <table class="table table-bordered mt-3">
+    <div class="container" style="margin-top: 20px;">
+        <h1 class="text-center">Daftar Berita</h1>
+        <table class="table table-bordered table-striped text-center" style="margin: auto; width: 80%;">
             <thead>
                 <tr>
                     <th>ID</th>

@@ -50,7 +50,7 @@
           <a href="user2.index" class="nav-link">User</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="berita" class="nav-link">beritabaru</a>
+          <a href="berita" class="nav-link">Berita</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
           <a href="setting" class="nav-link">Setting</a>
@@ -145,46 +145,7 @@
             <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
           </div>
         </li>
-        <!-- Notifications Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="far fa-bell"></i>
-            <span class="badge badge-warning navbar-badge">15</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <span class="dropdown-item dropdown-header">15 Notifications</span>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-envelope mr-2"></i> 4 new messages
-              <span class="float-right text-muted text-sm">3 mins</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-users mr-2"></i> 8 friend requests
-              <span class="float-right text-muted text-sm">12 hours</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-file mr-2"></i> 3 new reports
-              <span class="float-right text-muted text-sm">2 days</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-            <i class="fas fa-expand-arrows-alt"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-            <i class="fas fa-th-large"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- /.navbar -->
+
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -229,21 +190,6 @@
                     </button>
                   </div>
                 </div>
-                <div class="sidebar-search-results">
-                  <div class="list-group"><a href="#" class="list-group-item">
-                      <div class="search-title"><strong class="text-light"></strong>N<strong
-                          class="text-light"></strong>o<strong class="text-light"></strong> <strong
-                          class="text-light"></strong>e<strong class="text-light"></strong>l<strong
-                          class="text-light"></strong>e<strong class="text-light"></strong>m<strong
-                          class="text-light"></strong>e<strong class="text-light"></strong>n<strong
-                          class="text-light"></strong>t<strong class="text-light"></strong> <strong
-                          class="text-light"></strong>f<strong class="text-light"></strong>o<strong
-                          class="text-light"></strong>u<strong class="text-light"></strong>n<strong
-                          class="text-light"></strong>d<strong class="text-light"></strong>!<strong
-                          class="text-light"></strong></div>
-                      <div class="search-path"></div>
-                    </a></div>
-                </div>
               </div>
 
               <!-- Sidebar Menu -->
@@ -252,51 +198,13 @@
                   data-accordion="false">
                   <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-tachometer-alt"></i>
-                      <p>
-                        Dashboard
-                        <i class="right fas fa-angle-left"></i>
-                      </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                      <li class="nav-item">
-                        <a href="../../index.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Dashboard v1</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../../index2.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Dashboard v2</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../../index3.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Dashboard v3</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
 
-                  </li>
                   <li class="nav-item menu-open">
-                    <a href="#" class="nav-link active">
-                      <i class="nav-icon fas fa-copy"></i>
-                      <p>
-                        Layout Options
-                        <i class="fas fa-angle-left right"></i>
-                        <span class="badge badge-info right">6</span>
-                      </p>
-                    </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="../layout/top-nav.html" class="nav-link">
+                        <a href="../setting2.index" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
-                          <p>Top Navigation</p>
+                          <p>Setting</p>
                         </a>
                       </li>
                       <li class="nav-item">
@@ -305,55 +213,6 @@
                           <p>Top Navigation + Sidebar</p>
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="../layout/boxed.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Boxed</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../layout/fixed-sidebar.html" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Fixed Sidebar</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../layout/fixed-sidebar-custom.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../layout/fixed-topnav.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Fixed Navbar</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../layout/fixed-footer.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Fixed Footer</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../layout/collapsed-sidebar.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Collapsed Sidebar</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-
-
-
-
-
-
-
-
-
-
-
 
 
                 </ul>
@@ -377,32 +236,7 @@
       <!-- /.sidebar -->
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper" style="min-height: 36px;">
 
-      <!-- Main content -->
-      <section class="content">
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <div class="chard">
-                <div class="chard-body">
-                  <div class=container>
-                    @yield('konten')
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-          </div>
-
-      </section>
-      <!-- /.content -->
-    </div>
     <!-- /.content-wrapper -->
 
     {{-- <footer class="main-footer">
@@ -411,161 +245,6 @@
       </div>
       <strong>© 2015-2024 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     </footer> --}}
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark" style="display: none; bottom: 26px; top: 57px; height: 93px;">
-      <!-- Control sidebar content goes here -->
-      <div
-        class="p-3 control-sidebar-content os-host os-theme-light os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"
-        style="height: 93px;">
-        <div class="os-resize-observer-host observed">
-          <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
-        </div>
-        <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
-          <div class="os-resize-observer"></div>
-        </div>
-        <div class="os-content-glue" style="margin: -16px; width: 0px; height: 0px;"></div>
-        <div class="os-padding">
-          <div class="os-viewport os-viewport-native-scrollbars-invisible">
-            <div class="os-content" style="padding: 16px; height: 100%; width: 100%;">
-              <h5>Customize AdminLTE</h5>
-              <hr class="mb-2">
-              <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div>
-              <h6>Header Options</h6>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div>
-              <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div>
-              <h6>Sidebar Options</h6>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Fixed</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar
-                  Mini</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span>
-              </div>
-              <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus
-                  Auto-Expand</span></div>
-              <h6>Footer Options</h6>
-              <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
-              <h6>Small Text Options</h6>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div>
-              <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div>
-              <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div>
-              <h6>Navbar Variants</h6>
-              <div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white">
-                  <option class="bg-primary">Primary</option>
-                  <option class="bg-secondary">Secondary</option>
-                  <option class="bg-info">Info</option>
-                  <option class="bg-success">Success</option>
-                  <option class="bg-danger">Danger</option>
-                  <option class="bg-indigo">Indigo</option>
-                  <option class="bg-purple">Purple</option>
-                  <option class="bg-pink">Pink</option>
-                  <option class="bg-navy">Navy</option>
-                  <option class="bg-lightblue">Lightblue</option>
-                  <option class="bg-teal">Teal</option>
-                  <option class="bg-cyan">Cyan</option>
-                  <option class="bg-dark">Dark</option>
-                  <option class="bg-gray-dark">Gray dark</option>
-                  <option class="bg-gray">Gray</option>
-                  <option class="bg-light">Light</option>
-                  <option class="bg-warning">Warning</option>
-                  <option class="bg-white">White</option>
-                  <option class="bg-orange">Orange</option>
-                </select></div>
-              <h6>Accent Color Variants</h6>
-              <div class="d-flex"></div><select class="custom-select mb-3 border-0">
-                <option>None Selected</option>
-                <option class="bg-primary">Primary</option>
-                <option class="bg-warning">Warning</option>
-                <option class="bg-info">Info</option>
-                <option class="bg-danger">Danger</option>
-                <option class="bg-success">Success</option>
-                <option class="bg-indigo">Indigo</option>
-                <option class="bg-lightblue">Lightblue</option>
-                <option class="bg-navy">Navy</option>
-                <option class="bg-purple">Purple</option>
-                <option class="bg-fuchsia">Fuchsia</option>
-                <option class="bg-pink">Pink</option>
-                <option class="bg-maroon">Maroon</option>
-                <option class="bg-orange">Orange</option>
-                <option class="bg-lime">Lime</option>
-                <option class="bg-teal">Teal</option>
-                <option class="bg-olive">Olive</option>
-              </select>
-              <h6>Dark Sidebar Variants</h6>
-              <div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary">
-                <option>None Selected</option>
-                <option class="bg-primary">Primary</option>
-                <option class="bg-warning">Warning</option>
-                <option class="bg-info">Info</option>
-                <option class="bg-danger">Danger</option>
-                <option class="bg-success">Success</option>
-                <option class="bg-indigo">Indigo</option>
-                <option class="bg-lightblue">Lightblue</option>
-                <option class="bg-navy">Navy</option>
-                <option class="bg-purple">Purple</option>
-                <option class="bg-fuchsia">Fuchsia</option>
-                <option class="bg-pink">Pink</option>
-                <option class="bg-maroon">Maroon</option>
-                <option class="bg-orange">Orange</option>
-                <option class="bg-lime">Lime</option>
-                <option class="bg-teal">Teal</option>
-                <option class="bg-olive">Olive</option>
-              </select>
-              <h6>Light Sidebar Variants</h6>
-              <div class="d-flex"></div><select class="custom-select mb-3 border-0">
-                <option>None Selected</option>
-                <option class="bg-primary">Primary</option>
-                <option class="bg-warning">Warning</option>
-                <option class="bg-info">Info</option>
-                <option class="bg-danger">Danger</option>
-                <option class="bg-success">Success</option>
-                <option class="bg-indigo">Indigo</option>
-                <option class="bg-lightblue">Lightblue</option>
-                <option class="bg-navy">Navy</option>
-                <option class="bg-purple">Purple</option>
-                <option class="bg-fuchsia">Fuchsia</option>
-                <option class="bg-pink">Pink</option>
-                <option class="bg-maroon">Maroon</option>
-                <option class="bg-orange">Orange</option>
-                <option class="bg-lime">Lime</option>
-                <option class="bg-teal">Teal</option>
-                <option class="bg-olive">Olive</option>
-              </select>
-              <h6>Brand Logo Variants</h6>
-              <div class="d-flex"></div><select class="custom-select mb-3 border-0">
-                <option>None Selected</option>
-                <option class="bg-primary">Primary</option>
-                <option class="bg-secondary">Secondary</option>
-                <option class="bg-info">Info</option>
-                <option class="bg-success">Success</option>
-                <option class="bg-danger">Danger</option>
-                <option class="bg-indigo">Indigo</option>
-                <option class="bg-purple">Purple</option>
-                <option class="bg-pink">Pink</option>
-                <option class="bg-navy">Navy</option>
-                <option class="bg-lightblue">Lightblue</option>
-                <option class="bg-teal">Teal</option>
-                <option class="bg-cyan">Cyan</option>
-                <option class="bg-dark">Dark</option>
-                <option class="bg-gray-dark">Gray dark</option>
-                <option class="bg-gray">Gray</option>
-                <option class="bg-light">Light</option>
-                <option class="bg-warning">Warning</option>
-                <option class="bg-white">White</option>
-                <option class="bg-orange">Orange</option><a href="#">clear</a>
-              </select>
-            </div>
-          </div>
-        </div>
         <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
           <div class="os-scrollbar-track">
             <div class="os-scrollbar-handle" style="transform: translate(0px, 0px);"></div>

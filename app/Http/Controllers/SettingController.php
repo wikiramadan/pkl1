@@ -11,8 +11,8 @@ class SettingController extends Controller
     //
     public function index()
     {
-        $settings = Setting::all(); // Ambil semua data dari database
-        return view('setting2.index', ['settings' => $settings]); // Kirim data ke view
+        $settings = Setting::all();
+        return view('setting2.index', ['settings' => $settings]); 
     }
 
 }
