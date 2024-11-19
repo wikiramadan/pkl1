@@ -118,7 +118,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </li>
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
-        
+
       </li>
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
@@ -192,6 +192,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Inactive Page</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="berita" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Berita</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="setting" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Setting</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -220,7 +232,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <h1 class="m-0"></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-           
+
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->

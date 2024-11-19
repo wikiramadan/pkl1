@@ -25,7 +25,7 @@ use App\Http\Controllers\SettingController;
 */
 
 Route::get('/', function () {
-    return view('navbar.home');
+    return view('template');
 });
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
