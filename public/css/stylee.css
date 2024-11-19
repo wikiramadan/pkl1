@@ -1,0 +1,15 @@
+/* Mengubah warna header sidebar */
+.main-sidebar {
+    background-color: #343a40; /* Ganti warna latar sidebar */
+}
+
+/* Menambahkan border pada tabel */
+.table-bordered {
+    border: 2px solid #000;
+}
+
+/* Mengubah warna tombol */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #0056b3;
+}

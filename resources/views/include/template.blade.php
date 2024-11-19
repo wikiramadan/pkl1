@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE</title>
-  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="cssn/style2.css">
+  <link rel="stylesheet" href="cssn/style1.css">
+  <link rel="stylesheet" href="cssn/style3.css">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"

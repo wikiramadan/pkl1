@@ -25,7 +25,7 @@ use App\Http\Controllers\SettingController;
 */
 
 Route::get('/', function () {
-    return view('include.template');
+    return view('navbar.home');
 });
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
@@ -59,9 +59,6 @@ Route::get('/setting2.index', [UserController::class, 'setting']);
 
 
 
-
-
-
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/reqister', [ReqisterController::class, 'index']);
 Route::get('/contak', [ContakController::class, 'index']);
@@ -70,6 +67,9 @@ Route::get('/contak', [ContakController::class, 'index']);
 Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
 Route::get('/user', [UserController::class, 'index']);
+
+Route::get('/user2.index', [UserController::class, 'user']);
+
 Route::get('/user2.index', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);
 Route::get('/berita2.index', [UserController::class, 'berita']);
