@@ -263,24 +263,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2024 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function () {
-        // Event ketika link sidebar diklik
-        $('.nav-sidebar .nav-link').on('click', function () {
-            // Hapus kelas active-custom dari semua link
-            $('.nav-sidebar .nav-link').removeClass('active-custom');
-            // Tambahkan kelas active-custom pada link yang diklik
-            $(this).addClass('active-custom');
-        });
-    });
-</script>
+
 
 <!-- jQuery -->
 <script src="{{asset('AdminLTE-3.2.0/plugins/jquery/jquery.min.js')}}"></script>
