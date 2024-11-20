@@ -60,8 +60,7 @@ Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
 Route::get('/user', [UserController::class, 'index']);
 
 Route::get('/user2', [UserController::class, 'user']);
-Route::POST('/user/store', [UserController::class, 'store'])->name('user2.index');
-Route::get('/user2.index', [UserController::class, 'user'])->name('user2.index');
+Route::post('/user2.index', [UserController::class, 'user'])->name('user2.index');
 
 Route::get('/user2.index', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);

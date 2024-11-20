@@ -24,7 +24,7 @@
                 </div>
                 <div class="form-group">
                     <label for="alamat">Alamat</label>
-                    <input name="alamat" id="alamat" class="form-control"></inp>
+                    <textarea name="alamat" id="alamat" class="form-control" placeholder="Masukkan alamat lengkap">{{ $user->alamat ?? '' }}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Simpan</button>
             </form>
