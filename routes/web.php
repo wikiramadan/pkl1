@@ -31,16 +31,7 @@ Route::get('/', function () {
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
 // perintah untuk membaca url berita /navbar.Controller tempat untuk menangani permintaan pengguna (seperti menampilkan halaman atau memproses formulir).
 Route::get('/navbar', [NavbarController::class, 'index']);
-// Route::get('/navbar', [SiswaController::class, 'contak']);
 
-// Route::get('/berita', [BeritaController::class, 'index']);
-// Route::get('/berita.show', [BeritaController::class, 'show']);
-// Route::get('/berita.detail2', [BeritaController::class, 'detail2']);
-// Route::get('/berita.detail3', [BeritaController::class, 'detail3']);
-// Route::get('/berita.detal4', [BeritaController::class, 'detail4']);
-// Route::get('/berita.detail5', [BeritaController::class, 'detail5']);
-// Route::get('/beritad.etail6', [BeritaController::class, 'detail6']);
-// Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita/create');
 Route::get('/ContentBerita', [ContentController::class,'index']);
 Route::get('/ContentBerita.detail1', [ContentController::class, 'detail1']);
 Route::get('/ContentBerita.detail2', [ContentController::class, 'detail2']);
@@ -68,10 +59,14 @@ Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
 Route::get('/user', [UserController::class, 'index']);
 
-Route::get('/user2.index', [UserController::class, 'user']);
+Route::get('/user2', [UserController::class, 'user']);
+Route::POST('/user/store', [UserController::class, 'store'])->name('user2.index');
+Route::get('/user2.index', [UserController::class, 'user'])->name('user2.index');
 
 Route::get('/user2.index', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);
 Route::get('/berita2.index', [UserController::class, 'berita']);
 Route::get('/setting', [SettingController::class, 'index']); // Rute untuk Setting Index
 Route::get('/setting2', [SettingController::class, 'setting']);
+Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');
+Route::get('/user2/create', [UserController::class, 'create'])->name('user2.create');

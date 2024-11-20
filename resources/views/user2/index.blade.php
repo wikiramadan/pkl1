@@ -7,6 +7,10 @@
         <h3 class="card-title">Daftar Pengguna</h3>
       </div>
       <!-- /.card-header -->
+      <div class="card-header d-flex justify-content-start">
+        <a href="{{ route('user2.create') }}" class="btn btn-sm btn-secondary">Tambah Pengguna</a>
+    </div>
+    
       <div class="card-body">
         <table class="table table-bordered table-striped table-hover">
           <thead>
