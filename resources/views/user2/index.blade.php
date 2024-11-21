@@ -1,7 +1,13 @@
 @extends('user.index')
 
 @section('content')
-<div class="container mt-4">
+<div class="container mt-2">
+  @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
     <div class="card">
       <div class="card-header">
         <h3 class="card-title">Daftar Pengguna</h3>
@@ -20,6 +26,7 @@
               <th>Email</th>
               <th>Password</th>
               <th>Alamat</th>
+              <th>Aksi</th>
 
             </tr>
           </thead>

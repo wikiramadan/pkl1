@@ -50,7 +50,8 @@ class BeritaController extends Controller
 
     }
 
-    public function create()
+    // cretae tbel
+    public function createe()
     {
         return view('berita.create');
     }
@@ -60,6 +61,36 @@ class BeritaController extends Controller
         $beritas = Berita::all();
         return view('berita2.index', ['beritas' => $beritas]); 
     }
+
+
+    public function create()
+    {
+        return view('berita2.create');
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'judulberita' => 'required|string|max:255',
+            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'lokasi' => 'required|string|max:255',
+            'deskripsi' => 'required|string',
+        ]);
+
+        // Upload gambar
+        $gambarPath = $request->file('gambar')->store('images', 'public');
+
+        // Simpan data ke database
+        Berita::create([
+            'judulberita' => $request->judulberita,
+            'gambar' => $gambarPath,
+            'lokasi' => $request->lokasi,
+            'deskripsi' => $request->deskripsi,
+        ]);
+
+        return redirect()->route('berita2.index')->with('success', 'Berita berhasil ditambahkan.');
+    }
+
 
 
 }
