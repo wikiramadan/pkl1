@@ -57,6 +57,8 @@ Route::get('/berita2.index', [UserController::class, 'berita']);
 Route::get('/setting', [SettingController::class, 'index']);
 Route::get('/setting2.index', [UserController::class, 'setting']);
 
+Route::put('/setting/{id}', [SettingController::class, 'update'])->name('setting.update');
+Route::get('/setting/edit/{id}', [SettingController::class, 'edit'])->name('setting.edit');
 
 
 Route::get('/login', [LoginController::class, 'index']);
