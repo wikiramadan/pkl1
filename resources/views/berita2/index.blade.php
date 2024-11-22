@@ -7,6 +7,7 @@
                 <h3 class="card-title">Berita</h3>
             </div>
             <div class="card-body">
+                <a href="{{ route('berita2.create') }}" class="btn btn-sm btn-secondary">Tambah Berita</a>
                 <table class="table table-bordered table-striped table-hover">
                     <thead class="thead text-center">
                         <tr>
