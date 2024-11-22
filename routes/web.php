@@ -48,8 +48,9 @@ Route::get('/berita2.index', [UserController::class, 'berita']);
 Route::get('/setting', [SettingController::class, 'index']);
 Route::get('/setting2.index', [UserController::class, 'setting']);
 
-Route::put('/setting/{id}', [SettingController::class, 'update'])->name('setting.update');
-Route::get('/setting/edit/{id}', [SettingController::class, 'edit'])->name('setting.edit');
+Route::get('/settings', [SettingController::class, 'index'])->name('setting2.index');
+// Route::put('/setting/update-all', [SettingController::class, 'updateAll'])->name('setting.updateAll');
+Route::put('/settings/update', [SettingController::class, 'update'])->name('setting.update');
 
 
 Route::get('/login', [LoginController::class, 'index']);
@@ -67,7 +68,7 @@ Route::post('/user2.index', [UserController::class, 'user'])->name('user2.index'
 Route::get('/user2.index', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);
 Route::get('/berita2.index', [UserController::class, 'berita']);
-Route::get('/setting', [SettingController::class, 'index']); // Rute untuk Setting Index
+Route::get('/setting', [SettingController::class, 'index']); 
 Route::get('/setting2', [SettingController::class, 'setting']);
 
 Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');

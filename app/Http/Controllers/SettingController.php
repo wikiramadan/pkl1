@@ -11,8 +11,9 @@ class SettingController extends Controller
     //
     public function index()
     {
-        $setting = Setting::first();
-        return view('setting2.index', compact('setting'));
+        $settings = Setting::all();
+
+        return view('setting2.index', ['settings' => $settings]);
     }
 
 
@@ -24,49 +25,46 @@ class SettingController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+
+// public function updateAll(Request $request)
+// {
+//     foreach ($request->ids as $id) {
+//         $setting = Setting::find($id);
+
+//         if ($setting) {
+//             $setting->logo = $request->logo[$id] ?? $setting->logo;
+//             $setting->gambarheader = $request->gambarheader[$id] ?? $setting->gambarheader;
+//             $setting->gambarprofil1 = $request->gambarprofil1[$id] ?? $setting->gambarprofil1;
+//             $setting->gambarprofil2 = $request->gambarprofil2[$id] ?? $setting->gambarprofil2;
+//             $setting->namaprofil1 = $request->namaprofil1[$id] ?? $setting->namaprofil1;
+//             $setting->namaprofil2 = $request->namaprofil2[$id] ?? $setting->namaprofil2;
+
+//             $setting->save();
+//         }
+//     }
+
+//     return redirect()->route('setting2.index')->with('success', 'Data berhasil diperbarui!');
+// }
+
+
+
+public function update(Request $request)
 {
-    // Validasi input teks dan gambar
-    $request->validate([
-        'namaprofil1' => 'nullable|string|max:255',
-        'namaprofil2' => 'nullable|string|max:255',
-        'logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-        'gambarheader' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-        'gambarprofil1' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-        'gambarprofil2' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-    ]);
+    foreach ($request->id as $key => $id) {
+        $setting = Setting::findOrFail($id);
 
-    // Cari data setting berdasarkan ID
-    $setting = Setting::findOrFail($id);
+        $setting->logo = $request->logo[$id] ?? null;
+        $setting->gambarheader = $request->gambarheader[$id] ?? null;
+        $setting->gambarprofil1 = $request->gambarprofil1[$id] ?? null;
+        $setting->gambarprofil2 = $request->gambarprofil2[$id] ?? null;
+        $setting->namaprofil1 = $request->namaprofil1[$id] ?? null;
+        $setting->namaprofil2 = $request->namaprofil2[$id] ?? null;
 
-    // Update teks jika ada perubahan
-    $setting->namaprofil1 = $request->namaprofil1;
-    $setting->namaprofil2 = $request->namaprofil2;
-
-    // Update gambar jika ada perubahan
-    if ($request->hasFile('logo')) {
-        $setting->logo = $request->file('logo')->store('logos', 'public');
+        $setting->save();
     }
 
-    if ($request->hasFile('gambarheader')) {
-        $setting->gambarheader = $request->file('gambarheader')->store('header_images', 'public');
-    }
-
-    if ($request->hasFile('gambarprofil1')) {
-        $setting->gambarprofil1 = $request->file('gambarprofil1')->store('profile_images', 'public');
-    }
-
-    if ($request->hasFile('gambarprofil2')) {
-        $setting->gambarprofil2 = $request->file('gambarprofil2')->store('profile_images', 'public');
-    }
-
-    // Simpan perubahan
-    $setting->save();
-
-    return redirect()->route('setting.edit', $id)->with('success', 'Pengaturan berhasil diperbarui!');
+    return redirect()->route('setting2.index')->with('success', 'Data berhasil diperbarui!');
 }
-
-
 
 
 
