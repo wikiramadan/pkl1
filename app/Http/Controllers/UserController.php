@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use RealRashid\SweetAlert\Facades\Alert;
 class UserController extends Controller
 {
     //
@@ -60,6 +60,9 @@ class UserController extends Controller
             'password' =>$request->password,
            'alamat' => $request->alamat,
         ]);
+
+        Alert::success('Success', 'Data berhasil disimpan');
+         Alert::error('Gagal!', 'Ada kesalahan saat menyimpan data.');
 
         return redirect()->route('user2.index')->with('success', 'Pengguna berhasil ditambahkan.');
     }

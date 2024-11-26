@@ -268,6 +268,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </div>
 <!-- ./wrapper -->
 
+@include('sweetalert::alert')
+
 <!-- REQUIRED SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
