@@ -73,3 +73,5 @@ Route::get('/setting2', [SettingController::class, 'setting']);
 
 Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');
 Route::get('/user2/create', [UserController::class, 'create'])->name('user2.create');
+
+Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user2.destroy');

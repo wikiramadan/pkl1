@@ -62,9 +62,20 @@ class UserController extends Controller
         ]);
 
         Alert::success('Success', 'Data berhasil disimpan');
-         Alert::error('Gagal!', 'Ada kesalahan saat menyimpan data.');
 
         return redirect()->route('user2.index')->with('success', 'Pengguna berhasil ditambahkan.');
+        
     }
+
+    public function destroy($id)
+{
+    $user = User::find($id);
+    
+    // Melakukan soft delete
+    $user->delete();
+
+    return redirect()->route('user2.index')->with('success', 'User berhasil dihapus.');
+}
+    
 
 }
