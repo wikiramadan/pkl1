@@ -63,7 +63,7 @@ class UserController extends Controller
 
         Alert::success('Success', 'Data berhasil disimpan');
 
-        return redirect()->route('user2.index')->with('success', 'Pengguna berhasil ditambahkan.');
+        return redirect()->route('user2.index');
         
     }
 
