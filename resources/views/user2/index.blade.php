@@ -38,8 +38,13 @@
               <td>{{ $user->password}}</td>
               <td>{{ $user->alamat}}</td>
               <td>
-                 
+                <form action="{{ route('user2.destroy', $user->id) }}" method="POST">
+                  @csrf
+                  @method('DELETE')
+                  <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus user ini?')">Hapus</button>
+              </form>
               </td>
+              
           </tr>
               
           @endforeach

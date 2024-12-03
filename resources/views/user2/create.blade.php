@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container mt-4">
+    
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Tambah Pengguna</h3>
@@ -31,4 +32,5 @@
         </div>
     </div>
 </div>
+
 @endsection
