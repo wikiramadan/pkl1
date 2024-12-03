@@ -78,13 +78,14 @@ Route::get('/setting2', [SettingController::class, 'setting']);
 Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');
 Route::get('/user2/create', [UserController::class, 'create'])->name('user2.create');
 
-<<<<<<< HEAD
 
 Route::get('/kabar', [KabarController::class, 'index'])->name('index');
 Route::get('/create', [KabarController::class, 'create'])->name('kabar.create');
 Route::resource('kabar', KabarController::class);
 // Route::get('/{kabar}', [KabarController::class, 'show'])->name('show');
 Route::delete('/kabar/{id}', [KabarController::class, 'destroy'])->name('kabar.destroy');
-=======
 Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user2.destroy');
->>>>>>> eecf27a8a1114d650c7ac5528f71d008fb89b936
+
+Route::get('user2/{id}/edit', [UserController::class, 'edit'])->name('user2.edit');
+
+Route::put('user/{id}', [UserController::class, 'update'])->name('user2.update');
