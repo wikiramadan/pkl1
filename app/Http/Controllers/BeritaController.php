@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
-
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class BeritaController extends Controller
 {
@@ -59,7 +60,7 @@ class BeritaController extends Controller
     public function data()
     {
         $beritas = Berita::all();
-        return view('berita2.index', ['beritas' => $beritas]); 
+        return view('berita2.index', ['beritas' => $beritas]);
     }
 
 
@@ -87,6 +88,11 @@ class BeritaController extends Controller
             'lokasi' => $request->lokasi,
             'deskripsi' => $request->deskripsi,
         ]);
+
+
+        Alert::success('Success', 'Data berhasil disimpan');
+        Alert::error('Gagal!', 'Ada kesalahan saat menyimpan data.');
+
 
         return redirect()->route('berita2.index')->with('success', 'Berita berhasil ditambahkan.');
     }

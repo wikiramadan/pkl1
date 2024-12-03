@@ -12,6 +12,7 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Berita2Controller;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\KabarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,8 +69,18 @@ Route::post('/user2.index', [UserController::class, 'user'])->name('user2.index'
 Route::get('/user2.index', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);
 Route::get('/berita2.index', [UserController::class, 'berita']);
-Route::get('/setting', [SettingController::class, 'index']); 
+Route::get('/berita2', [BeritaController::class, 'index'])->name('berita2.index');
+Route::POST('/berita/store', [BeritaController::class, 'store'])->name('berita.store');
+Route::get('/berita2/create', [BeritaController::class, 'create'])->name('berita2.create');
+Route::get('/setting', [SettingController::class, 'index']);
 Route::get('/setting2', [SettingController::class, 'setting']);
 
 Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');
 Route::get('/user2/create', [UserController::class, 'create'])->name('user2.create');
+
+
+Route::get('/kabar', [KabarController::class, 'index'])->name('index');
+Route::get('/create', [KabarController::class, 'create'])->name('kabar.create');
+Route::resource('kabar', KabarController::class);
+// Route::get('/{kabar}', [KabarController::class, 'show'])->name('show');
+Route::delete('/kabar/{id}', [KabarController::class, 'destroy'])->name('kabar.destroy');
