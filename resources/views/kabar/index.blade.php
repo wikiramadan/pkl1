@@ -2,12 +2,18 @@
 
 @section('content')
     <div class="container mt-4">
+
+        @if (session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+        @endif
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Kabar</h3>
+                <h3 class="card-title">Berita</h3>
             </div>
             <div class="card-body">
-                <a href="{{ route('kabar.create') }}" class="btn btn-sm btn-secondary">Tambah Kabar</a>
+                <a href="{{ route('kabar.create') }}" class="btn btn-sm btn-secondary">Tambah Berita</a>
                 <table class="table table-bordered table-striped table-hover" style="margin-top: 15px">
                     <thead class="thead text-center">
                         <tr>
@@ -25,20 +31,26 @@
                                 <td>{{ $kabar->id }}</td>
                                 <td>{{ $kabar->judulberita }}</td>
                                 <td>
-                                    <img src="{{ asset('storage/' . $kabar->gambar) }}" alt="Gambar" style="width: 100px; height: auto;">
+                                    <img src="{{ asset('storage/' . $kabar->gambar) }}" alt="Gambar"
+                                        style="width: 100px; height: auto;">
                                 </td>
+
                                 <td>{{ $kabar->lokasi }}</td>
                                 <td>{{ $kabar->deskripsi }}</td>
                                 <td class="text-center">
-                                    <!-- Tombol Hapus -->
-                                    <form action="{{ route('kabar.destroy', $kabar->id) }}" method="POST" style="display: inline;">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">
-                                            Hapus
-                                        </button>
-                                    </form>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ route('kabar.edit', $kabar->id) }}"
+                                            class="btn btn-sm btn-primary me-2">Edit</a>
+
+                                        <form action="{{ route('kabar.destroy', $kabar->id) }}" method="POST"
+                                            onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                        </form>
+                                    </div>
                                 </td>
+
                             </tr>
                         @endforeach
                     </tbody>

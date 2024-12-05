@@ -15,20 +15,17 @@ class KabarController extends Controller
         return view('kabar.index', compact('kabars'));
     }
 
-    // Menampilkan form untuk membuat kabar baru
     public function create()
     {
         return view('kabar.create');
     }
 
-    // Menampilkan data semua kabar
     public function data()
     {
         $kabars = Kabar::all();
         return view('kabar.index', ['kabars' => $kabars]);
     }
 
-    // Menyimpan data kabar baru ke database
     public function store(Request $request)
     {
         $request->validate([
@@ -39,10 +36,8 @@ class KabarController extends Controller
         ]);
 
         try {
-            // Upload gambar
             $gambarPath = $request->file('gambar')->store('images', 'public');
 
-            // Simpan data ke database
             Kabar::create([
                 'judulberita' => $request->judulberita,
                 'gambar' => $gambarPath,
@@ -57,6 +52,48 @@ class KabarController extends Controller
             return back()->withInput();
         }
     }
+
+    public function edit($id)
+    {
+        $kabar = Kabar::findOrFail($id);
+
+        return view('kabar.edit', compact('kabar'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'judulberita' => 'required|string|max:255',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'lokasi' => 'required|string|max:255',
+            'deskripsi' => 'required|string',
+        ]);
+
+        try {
+            $kabar = Kabar::findOrFail($id);
+
+            if ($request->hasFile('gambar')) {
+                $gambarPath = $request->file('gambar')->store('images', 'public');
+                $kabar->gambar = $gambarPath;
+                if ($gambarPath) {
+                    if ($kabar->gambar && file_exists(storage_path('app/public/' . $kabar->gambar))) {
+                        unlink(storage_path('app/public/' . $kabar->gambar));
+                    }
+                }
+            }
+
+
+            $kabar->judulberita = $request->judulberita;
+            $kabar->lokasi = $request->lokasi;
+            $kabar->deskripsi = $request->deskripsi;
+            $kabar->save();
+
+            return redirect()->route('kabar.index')->with('success', 'Kabar berhasil diperbarui.');
+        } catch (\Exception $e) {
+            return back()->with('error', 'Gagal memperbarui kabar: ' . $e->getMessage());
+        }
+    }
+
 
     public function destroy($id)
     {
