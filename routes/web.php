@@ -87,3 +87,7 @@ Route::delete('/kabar/{id}', [KabarController::class, 'destroy'])->name('kabar.d
 Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user2.destroy');
 Route::get('/kabar/{id}/edit', [KabarController::class, 'edit'])->name('kabar.edit');
 Route::put('/kabar/{id}', [KabarController::class, 'update'])->name('kabar.update');
+
+Route::get('user2/{id}/edit', [UserController::class, 'edit'])->name('user2.edit');
+
+Route::put('user/{id}', [UserController::class, 'update'])->name('user2.update');

@@ -8,7 +8,6 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class KabarController extends Controller
 {
-    // Menampilkan daftar kabar
     public function index()
     {
         $kabars = Kabar::all();

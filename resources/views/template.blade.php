@@ -145,15 +145,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{asset('gambar/logosmk.jpg')}}" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">SMKN 1 LUBUK SIKAPING</a>
-        </div>
-      </div> --}}
 
       <!-- SidebarSearch Form -->
       <div class="form-inline">
@@ -187,18 +178,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Halaman User</p>
                 </a>
               </li>
-              {{-- <li class="nav-item">
-                <a href="#" class="nav-link ">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li> --}}
-              <li class="nav-item">
-                <a href="berita" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Berita</p>
-                </a>
-              </li>
+              
               <li class="nav-item">
                 <a href="setting" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
