@@ -26,7 +26,7 @@ use App\Http\Controllers\KabarController;
 */
 
 Route::get('/', function () {
-    return view('navbar.home');
+    return view('auth.login');
 });
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
@@ -89,3 +89,8 @@ Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user2.des
 Route::get('user2/{id}/edit', [UserController::class, 'edit'])->name('user2.edit');
 
 Route::put('user/{id}', [UserController::class, 'update'])->name('user2.update');
+
+
+Route::get('/login', [LoginController::class, 'index'])->name('auth.login')->middleware('guest');
+Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('login-proses');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
