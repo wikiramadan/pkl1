@@ -85,12 +85,17 @@ Route::resource('kabar', KabarController::class);
 // Route::get('/{kabar}', [KabarController::class, 'show'])->name('show');
 Route::delete('/kabar/{id}', [KabarController::class, 'destroy'])->name('kabar.destroy');
 Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user2.destroy');
+Route::get('/kabar/{id}/edit', [KabarController::class, 'edit'])->name('kabar.edit');
+Route::put('/kabar/{id}', [KabarController::class, 'update'])->name('kabar.update');
 
 Route::get('user2/{id}/edit', [UserController::class, 'edit'])->name('user2.edit');
 
 Route::put('user/{id}', [UserController::class, 'update'])->name('user2.update');
+<<<<<<< HEAD
 
 
 Route::get('/login', [LoginController::class, 'index'])->name('auth.login')->middleware('guest');
 Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('login-proses');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+=======
+>>>>>>> 46fc0e4adf6fc51894b57b9893f245da05bf1ce2

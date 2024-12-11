@@ -1,11 +1,9 @@
-<!-- resources/views/users/edit.blade.php -->
 @extends('template')
 
 @section('content')
 <div class="container">
     <h2>Edit User</h2>
 
-    <!-- Menampilkan pesan jika ada error atau sukses -->
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -14,7 +12,7 @@
 
     <form action="{{ route('user2.update', $user->id) }}" method="POST">
         @csrf
-        @method('PUT')  <!-- Menggunakan metode PUT untuk update -->
+        @method('PUT')  
 
         <div class="form-group">
             <label for="name">Name:</label>
