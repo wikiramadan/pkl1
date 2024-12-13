@@ -26,7 +26,7 @@ use App\Http\Controllers\KabarController;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('navbar.home');
 });
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
@@ -54,19 +54,19 @@ Route::get('/settings', [SettingController::class, 'index'])->name('setting2.ind
 Route::put('/settings/update', [SettingController::class, 'update'])->name('setting.update');
 
 
-Route::get('/login', [LoginController::class, 'index']);
+// Route::get('/login', [LoginController::class, 'index']);
 Route::get('/reqister', [ReqisterController::class, 'index']);
 Route::get('/contak', [ContakController::class, 'index']);
 
 
 Route::get('/detail-wiki', [DetailkamiController::class, 'detailWiki']);
 Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
-Route::get('/user', [UserController::class, 'index']);
+// Route::get('/user', [UserController::class, 'index']);
 
-Route::get('/user2', [UserController::class, 'user']);
-Route::post('/user2.index', [UserController::class, 'user'])->name('user2.index');
+// Route::get('/user', [UserController::class, 'user']);
+Route::post('/UserAdmin', [UserController::class, 'user'])->name('user.Admin');
 
-Route::get('/user2.index', [UserController::class, 'user']);
+Route::get('/UserAdmin', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);
 Route::get('/berita2.index', [UserController::class, 'berita']);
 Route::get('/berita2', [BeritaController::class, 'index'])->name('berita2.index');
@@ -76,7 +76,7 @@ Route::get('/setting', [SettingController::class, 'index']);
 Route::get('/setting2', [SettingController::class, 'setting']);
 
 Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');
-Route::get('/user2/create', [UserController::class, 'create'])->name('user2.create');
+Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
 
 
 Route::get('/kabar', [KabarController::class, 'index'])->name('index');
@@ -84,18 +84,18 @@ Route::get('/create', [KabarController::class, 'create'])->name('kabar.create');
 Route::resource('kabar', KabarController::class);
 // Route::get('/{kabar}', [KabarController::class, 'show'])->name('show');
 Route::delete('/kabar/{id}', [KabarController::class, 'destroy'])->name('kabar.destroy');
-Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user2.destroy');
+Route::delete('/{id}', [UserController::class, 'destroy'])->name('user.destroy');
 Route::get('/kabar/{id}/edit', [KabarController::class, 'edit'])->name('kabar.edit');
 Route::put('/kabar/{id}', [KabarController::class, 'update'])->name('kabar.update');
 
-Route::get('user2/{id}/edit', [UserController::class, 'edit'])->name('user2.edit');
+Route::get('user/{id}/edit', [UserController::class, 'edit'])->name('user.edit');
 
-Route::put('user/{id}', [UserController::class, 'update'])->name('user2.update');
-<<<<<<< HEAD
+Route::put('/{id}', [UserController::class, 'update'])->name('user.update');
 
 
-Route::get('/login', [LoginController::class, 'index'])->name('auth.login')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('login-proses');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-=======
->>>>>>> 46fc0e4adf6fc51894b57b9893f245da05bf1ce2
+
+
+Route::get('/lupapassword', [LoginController::class, 'lupa']);
