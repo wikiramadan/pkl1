@@ -25,9 +25,10 @@ use App\Http\Controllers\KabarController;
 |
 */
 
+
 Route::get('/', function () {
     return view('navbar.home');
-});
+})->name('home');
 
 // route "mengatur alur permintaan HTTP (request) ke aplikasi Anda dan bagaimana meresponsnya."
 // perintah untuk membaca url berita /navbar.Controller tempat untuk menangani permintaan pengguna (seperti menampilkan halaman atau memproses formulir).
@@ -64,16 +65,12 @@ Route::get('/detail-afifi', [DetailkamiController::class, 'detailAfifi']);
 // Route::get('/user', [UserController::class, 'index']);
 
 // Route::get('/user', [UserController::class, 'user']);
-Route::post('/UserAdmin', [UserController::class, 'user'])->name('user.Admin');
 
-Route::get('/UserAdmin', [UserController::class, 'user']);
 Route::get('/berita', [BeritaController::class, 'data']);
 Route::get('/berita2.index', [UserController::class, 'berita']);
 Route::get('/berita2', [BeritaController::class, 'index'])->name('berita2.index');
 Route::POST('/berita/store', [BeritaController::class, 'store'])->name('berita.store');
 Route::get('/berita2/create', [BeritaController::class, 'create'])->name('berita2.create');
-Route::get('/setting', [SettingController::class, 'index']);
-Route::get('/setting2', [SettingController::class, 'setting']);
 
 Route::POST('/user/store', [UserController::class, 'store'])->name('user.store');
 Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
@@ -99,3 +96,14 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 Route::get('/lupapassword', [LoginController::class, 'lupa']);
+
+
+Route::middleware(['check.admin'])->group(function () {
+    Route::POST('/UserAdmin', [UserController::class, 'user'])->name('user.Admin');
+    Route::get('/UserAdmin', [UserController::class, 'user']);
+
+    Route::get('/setting', [SettingController::class, 'index']);
+    Route::get('/setting2', [SettingController::class, 'setting']);
+
+    // Tambahkan route admin lainnya
+});
