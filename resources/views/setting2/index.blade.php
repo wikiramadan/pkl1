@@ -92,12 +92,12 @@
          {{ session('success') }}
          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
      </div>
- @endif
+ @endif 
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Setting</h3>
         </div>
-        <div class="card-body">
+         <div class="card-body">
             <form action="{{ route('setting.update') }}" method="POST">
                 @csrf
                 @method('PUT')

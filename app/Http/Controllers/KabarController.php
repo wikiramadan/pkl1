@@ -4,27 +4,30 @@ namespace App\Http\Controllers;
 
 use App\Models\Kabar;
 use Illuminate\Http\Request;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class KabarController extends Controller
 {
+    // API untuk mendapatkan data kabar dalam format JSON
+    public function getKabars()
+    {
+        $kabars = Kabar::all();
+        return response()->json($kabars);
+    }
+
+    // Menampilkan semua kabar
     public function index()
     {
         $kabars = Kabar::all();
         return view('kabar.index', compact('kabars'));
     }
 
+    // Form untuk menambahkan kabar baru
     public function create()
     {
         return view('kabar.create');
     }
 
-    public function data()
-    {
-        $kabars = Kabar::all();
-        return view('kabar.index', ['kabars' => $kabars]);
-    }
-
+    // Menyimpan kabar baru
     public function store(Request $request)
     {
         $request->validate([
@@ -44,21 +47,22 @@ class KabarController extends Controller
                 'deskripsi' => $request->deskripsi,
             ]);
 
-            Alert::success('Berhasil!', 'Data kabar berhasil disimpan.');
-            return redirect()->route('kabar.index')->with('success', 'Kabar berhasil ditambahkan.');
+            // Flash message using Laravel's session
+            return redirect()->route('kabar.index')->with('status', 'Kabar berhasil ditambahkan!');
         } catch (\Exception $e) {
-            Alert::error('Gagal!', 'Ada kesalahan saat menyimpan data: ' . $e->getMessage());
-            return back()->withInput();
+            return back()->with('status', 'Gagal menambahkan kabar: ' . $e->getMessage());
         }
     }
 
+
+    // Mengedit kabar
     public function edit($id)
     {
         $kabar = Kabar::findOrFail($id);
-
         return view('kabar.edit', compact('kabar'));
     }
 
+    // Memperbarui kabar
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -68,47 +72,30 @@ class KabarController extends Controller
             'deskripsi' => 'required|string',
         ]);
 
-        try {
-            $kabar = Kabar::findOrFail($id);
+        $kabar = Kabar::findOrFail($id);
 
-            if ($request->hasFile('gambar')) {
-                $gambarPath = $request->file('gambar')->store('images', 'public');
-                $kabar->gambar = $gambarPath;
-                if ($gambarPath) {
-                    if ($kabar->gambar && file_exists(storage_path('app/public/' . $kabar->gambar))) {
-                        unlink(storage_path('app/public/' . $kabar->gambar));
-                    }
-                }
-            }
-
-
-            $kabar->judulberita = $request->judulberita;
-            $kabar->lokasi = $request->lokasi;
-            $kabar->deskripsi = $request->deskripsi;
-            $kabar->save();
-
-            return redirect()->route('kabar.index')->with('success', 'Kabar berhasil diperbarui.');
-        } catch (\Exception $e) {
-            return back()->with('error', 'Gagal memperbarui kabar: ' . $e->getMessage());
+        if ($request->hasFile('gambar')) {
+            $gambarPath = $request->file('gambar')->store('images', 'public');
+            $kabar->gambar = $gambarPath;
         }
+
+        $kabar->judulberita = $request->judulberita;
+        $kabar->lokasi = $request->lokasi;
+        $kabar->deskripsi = $request->deskripsi;
+        $kabar->save();
+
+        return redirect()->route('kabar.index')->with('success', 'Kabar berhasil diperbarui.');
     }
 
-
+    // Menghapus kabar
     public function destroy($id)
     {
-        try {
-            $kabar = Kabar::findOrFail($id);
-
-            if ($kabar->gambar && file_exists(storage_path('app/public/' . $kabar->gambar))) {
-                unlink(storage_path('app/public/' . $kabar->gambar));
-            }
-
-            $kabar->delete();
-
-            return redirect()->route('kabar.index')->with('success', 'Kabar berhasil dihapus.');
-        } catch (\Exception $e) {
-            return redirect()->route('kabar.index')->with('error', 'Gagal menghapus kabar: ' . $e->getMessage());
+        $kabar = Kabar::findOrFail($id);
+        if ($kabar->gambar && file_exists(storage_path('app/public/' . $kabar->gambar))) {
+            unlink(storage_path('app/public/' . $kabar->gambar));
         }
-    }
+        $kabar->delete();
 
+        return redirect()->route('kabar.index')->with('success', 'Kabar berhasil dihapus.');
+    }
 }

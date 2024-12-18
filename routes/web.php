@@ -13,6 +13,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\Berita2Controller;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\KabarController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Api\KabarApiController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -91,11 +94,14 @@ Route::put('/kabar/{id}', [KabarController::class, 'update'])->name('kabar.updat
 Route::get('user2/{id}/edit', [UserController::class, 'edit'])->name('user2.edit');
 
 Route::put('user/{id}', [UserController::class, 'update'])->name('user2.update');
-<<<<<<< HEAD
 
 
 Route::get('/login', [LoginController::class, 'index'])->name('auth.login')->middleware('guest');
 Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('login-proses');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-=======
->>>>>>> 46fc0e4adf6fc51894b57b9893f245da05bf1ce2
+
+Route::get('/admin/kabar', [KabarController::class, 'index'])->name('admin.kabar.index');
+Route::post('/admin/kabar/store', [KabarController::class, 'store'])->name('admin.kabar.store');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/kabars', [KabarApiController::class, 'index']);

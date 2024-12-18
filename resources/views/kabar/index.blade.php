@@ -3,11 +3,12 @@
 @section('content')
     <div class="container mt-4">
 
-        @if (session('error'))
-            <div class="alert alert-danger">
-                {{ session('error') }}
-            </div>
-        @endif
+        @if(session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+@endif
+
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">Berita</h3>

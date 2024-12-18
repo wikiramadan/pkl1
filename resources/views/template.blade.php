@@ -35,7 +35,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           @csrf
           <button type="submit" class="btn btn">Logout</button>
       </form>
-      
+
       </li>
     </ul>
 
@@ -182,7 +182,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Halaman User</p>
                 </a>
               </li>
-              
+
               <li class="nav-item">
                 <a href="setting" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -270,5 +270,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{asset('AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('AdminLTE-3.2.0/dist/js/adminlte.min.js')}}"></script>
+<!-- SweetAlert2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.min.js"></script>
+
 </body>
 </html>
