@@ -36,12 +36,12 @@ class UserController extends Controller
 
         
         // dd($data);
-        return view('user2.index',['users' => $users]);
+        return view('user.Admin',['users' => $users]);
     }
 
     public function create()
     {
-        return view('user2.create'); // Pastikan view ini sesuai dengan lokasi file Blade Anda
+        return view('user.create'); // Pastikan view ini sesuai dengan lokasi file Blade Anda
     }
 
 
@@ -63,14 +63,14 @@ class UserController extends Controller
 
         Alert::success('Success', 'Data berhasil disimpan');
 
-        return redirect()->route('user2.index');
+        return redirect()->route('user.Admin');
         
     }
 
     public function edit($id)
     {
         $user = User::findOrFail($id); 
-        return view('user2.edit',compact('user'));  // Menampilkan form edit
+        return view('user.edit',compact('user'));  // Menampilkan form edit
     }
 
     public function update(Request $request, $id)
@@ -100,7 +100,7 @@ class UserController extends Controller
         $user->save();
 
         Alert::success('Success', 'Data berhasil diUpdate');
-        return redirect()->route('user2.index');
+        return redirect()->route('user.Admin');
     }
     
     public function destroy($id)
@@ -111,7 +111,7 @@ class UserController extends Controller
         $user->delete();
 
         Alert::success('Success', 'Data berhasil di Hapus');
-        return redirect()->route('user2.index');
+        return redirect()->route('user.Admin');
     }
     
 

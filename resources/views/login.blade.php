@@ -19,10 +19,15 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="{{route('auth.login')}}" class="h1"><b>Log</b>IN</a>
+      <a href="{{route('login')}}" class="h1"><b>Log</b>IN</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
+      @if (session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
 
       <form action="{{route('login-proses')}}" method="post">
         @csrf
@@ -68,7 +73,9 @@
       <div class="social-auth-links text-center mt-2 mb-3">
       </div>
       <!-- /.social-auth-links -->
-
+      <p class="mb-1">
+        <a href="lupapassword">I forgot my password</a>
+      </p>
      
     </div>
     <!-- /.card-body -->
@@ -83,12 +90,5 @@
 <script src="{{asset('AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('AdminLTE-3.2.0/dist/js/adminlte.min.js')}}"></script>
-
-@if ($message = Session::get('failed'))
-  <script>
-    Swal.fire('{{$message}}');
-  </script>
-@endif
-
 </body>
 </html>

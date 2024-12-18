@@ -10,7 +10,7 @@ class LoginController extends Controller
     //
     public function index()
     {
-        return view("auth.login");
+        return view("/login");
     }
 
     public function login_proses(Request $request)
@@ -24,7 +24,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
             
             Alert::success('Success', 'Login berhasil');
-            return redirect()->intended('user2.index');
+            return redirect()->intended('UserAdmin');
         }
     
         return back()->withErrors([
@@ -40,6 +40,11 @@ class LoginController extends Controller
         $request->session()->regenerateToken();
         return redirect('/login');
     }
+
+
     
+    public function lupa(){
+        return view('lupapassword');
+    }
     
 }
